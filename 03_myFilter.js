@@ -10,6 +10,16 @@
     -> [1, 3]
 */
 
-const myFilter = (arr, f) => {}
+const myFilter = (arr, f) => {
+  let i = 0;
+  let out = [];
+  while(i<arr.length){
+    if(f(arr[i])){
+      out.push(arr[i]);
+    }
+    i++;
+  }
+  return out;
+}
 
 module.exports = myFilter

@@ -19,3 +19,5 @@ const getUser = (callback) => {
   }
   callback(user)
 }
+
+getUser((user) => coinToss(user.guess, (didWin) => console.log(user.firstName+ (didWin? ' won!':' lost...'))));

@@ -12,6 +12,12 @@
     -> 20
 */
 
-const myReduce = (arr, f, init) => {}
+const myReduce = (arr, f, init) => {
+  let sum=init;
+  for(i=0;i<arr.length;i++){
+    sum += arr[i];
+  }
+  return sum;
+}
 
 module.exports = myReduce
